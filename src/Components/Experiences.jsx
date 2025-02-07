@@ -1,5 +1,4 @@
 import React from "react";
-import placeholder from "../assests/placeholder.jpeg";
 import Timeline from "./Timeline";
 import "../Css/Experiences.css";
 

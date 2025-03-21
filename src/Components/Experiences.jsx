@@ -1,8 +1,10 @@
-import React from "react";
+import React , {useContext}from "react";
 import Timeline from "./Timeline";
 import "../Css/Experiences.css";
+import { ThemeContext } from "./ThemeContext";
 
 const Experiences = () => {
+  const { isDarkMode } = useContext(ThemeContext);
   const timelineData = [
     {
       "type": "right-container",
@@ -23,11 +25,13 @@ const Experiences = () => {
   ];
 
   return (
-    <div>
-      <h1 style={{ textAlign: "center" }}>My Journey So Far</h1>
-      <Timeline timelineData={timelineData} />
-    </div>
+    <div className={`experience-timeline-section ${isDarkMode ? "dark" : "light"}`}>
+    <h1 style={{ textAlign: "center" }}>My Journey So Far</h1>
+    <Timeline timelineData={timelineData} />
+  </div>
   );
 };
 
 export default Experiences;
+
+

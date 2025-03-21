@@ -1,4 +1,22 @@
 
-  .education-timeline-section h1{
-   text-align:center
+.education-timeline-section h1{
+  text-align:center
+ }
+
+ .education-timeline-section.dark{
+   color:antiquewhite;
+ }
+
+ .education-timeline-section.light{
+   color:rgb(21, 20, 20);
+   font-weight: 600;
+
+ }
+
+ @media screen and (min-width: 768px) {
+  .education-timeline-section {
+      width: 80%;
+      margin: auto; 
+      padding: 10px;
   }
+}

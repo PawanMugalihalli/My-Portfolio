@@ -1,11 +1,12 @@
 
-
-import React from "react";
+import React , {useContext}from "react";
 import placeholder from "../assests/placeholder.jpeg";
 import Timeline from "./Timeline"; 
 import "../Css/Education.css";
+import { ThemeContext } from "./ThemeContext";
 
 const Education = () => {
+  const { isDarkMode } = useContext(ThemeContext);
   const timelineData = [
     {
       type: "right-container",
@@ -37,12 +38,14 @@ const Education = () => {
 
 
   return (
-    <div className="education-timeline-section">
-      <h1 >The Road to Knowledge: My Education Timeline</h1>
-      <Timeline timelineData={timelineData} />
-      
-    </div>
+    <div className={`education-timeline-section ${isDarkMode ? "dark" : "light"}`}>
+    <h1 >The Road to Knowledge: My Education Timeline</h1>
+    <Timeline timelineData={timelineData} />
+    
+  </div>
   );
 };
 
 export default Education;
+
+

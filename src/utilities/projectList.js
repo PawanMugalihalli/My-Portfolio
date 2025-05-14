@@ -1,126 +1,76 @@
-// const projects = [
-//   {
-//     name: "Portfolio Website",
-//     image: "/ProjectImages/Portfolio.png",
-//     technologies: ["Html", "ReactJS", "CSS", "JavaScript", "Bootstrap"],
-//     description: "A personal portfolio website to showcase my projects and skills.",
-//     github: "https://github.com/ThisIsSurabhiSinha/portfolio",
-//     deployed: "https://portfolio-xi-lac-98.vercel.app/",
-//     category: ["Frontend"],
-//   },
-//   {
-//     name: "Pizza App",
-//     image: "/ProjectImages/PizzaApp.png",
-//     technologies: ["Html", "CSS", "JavaScript", "Django", "Bootstrap", "REST APIs", "JQuery"],
-//     description: "A pizza ordering platform with order tracking and history.",
-//     github: "https://github.com/ThisIsSurabhiSinha/PizzaApp",
-//     deployed: "https://pizzaroo-pizza-delivery-app.onrender.com",
-//     category: ["Fullstack" , "Backend"],
-//   },
-//   {
-//     name: "Tic Tac Toe",
-//     image: "/ProjectImages/TicTacToe.jpg",
-//     technologies: ["Html", "CSS", "JavaScript", "Bootstrap"],
-//     description: "A simple Tic Tac Toe game built using frontend technologies.",
-//     github: "https://github.com/ThisIsSurabhiSinha/TicTacToe",
-//     deployed: "https://thisissurabhisinha.github.io/TicTacToe/",
-//     category: ["Frontend"],
-//   },
-//   {
-//     name: "Tenzie Game",
-//     image: "/ProjectImages/TenzieGame.jpg",
-//     technologies: ["Html", "ReactJS", "CSS", "JavaScript", "Bootstrap"],
-//     description: "A fun dice game built using React.",
-//     github: "https://github.com/ThisIsSurabhiSinha/tenzie-game",
-//     deployed: "https://tenzie-game-sage.vercel.app/",
-//     category: ["Frontend"],
-//   },
-//   {
-//     name: "Assembly Endgame",
-//     image: "/ProjectImages/AssemblyEndgame.jpg",
-//     technologies: ["Html", "ReactJS", "CSS", "JavaScript", "Bootstrap"],
-//     description: "A React-based project showcasing advanced assembly features.",
-//     github: "https://github.com/ThisIsSurabhiSinha/assembly-endgame",
-//     deployed: "https://assembly-endgame.vercel.app/",
-//     category: ["Frontend"],
-//   },
-//   {
-//     name: "Meme Blast",
-//     image: "/ProjectImages/MemeBlast.jpg",
-//     technologies: ["Html", "ReactJS", "CSS", "JavaScript", "Bootstrap"],
-//     description: "A fun app for browsing and sharing memes.",
-//     github: "https://github.com/ThisIsSurabhiSinha/memeBlast",
-//     deployed: "https://meme-blast-eight.vercel.app/",
-//     category: ["Frontend"],
-//   },
-//   {
-//     name: "My Business Card",
-//     image: "/ProjectImages/BusinessCard.jpg",
-//     technologies: ["Html", "ReactJS", "CSS", "JavaScript", "Bootstrap"],
-//     description: "A professional business card app built using React.",
-//     github: "https://github.com/ThisIsSurabhiSinha/Business-Card",
-//     deployed: "https://business-card-zyvp.vercel.app/",
-//     category: ["Frontend"],
-//   },
-//   {
-//     name: "ListEase - ToDo List",
-//     image: "/ProjectImages/toDoList.jpg",
-//     technologies: ["Html", "CSS", "JavaScript"],
-//     description: "https://github.com/ThisIsSurabhiSinha/ToDo",
-//     github: "https://github.com/ThisIsSurabhiSinha/ToDo",
-//     deployed: "https://thisissurabhisinha.github.io/ToDo/",
-//     category: ["Frontend"],
-//   },
-//   {
-//     name: "Club Catalyst",
-//     image: "/ProjectImages/ClubManagement.png",
-//     technologies: ["Html", "CSS", "JavaScript", "Django", "Bootstrap", "REST APIs", "JQuery"],
-//     description: "Club Catalyst is a comprehensive platform designed to manage and streamline club activities within our college. The website facilitates event scheduling, member management, task assignments, and communication, making club operations more efficient and organized.",
-//     github: "https://github.com/ThisIsSurabhiSinha/ClubManagement",
-//     deployed: "https://clubcatalyst-y67f5eu3.b4a.run/",
-//     category: ["Backend", "Fullstack"],
-//   },
-// ];
-
-// export default projects;
+import PortfolioImg from "../assests/ProjectImages/Portfolio.jpg";
+import CollegeClubsImg from "../assests/ProjectImages/ClubManagement.png";
+import TransformerImg from "../assests/ProjectImages/Transformer.jpg";
+import PlantDiseaseImg from "../assests/ProjectImages/PlantDisease.jpg";
+import DiabetesPredictionImg from "../assests/ProjectImages/DiabetesPrediction.jpeg";
+import CelebMatchImg from "../assests/ProjectImages/CelebMatch.jpeg";
 
 const projects = [
   {
+    name: "Mini2DMetaverse",
+    image: CollegeClubsImg,
+    technologies: ["JAVA", "SpringBoot", "MySQL", "Bootstrap", "JavaScript", "jQuery"],
+    description: "A real-time Spring Boot-based web application that combines a chat system with an interactive 2D Tic Tac Toe game. Users can create or join public and private rooms, each featuring integrated live chat and game functionality. The project focuses on seamless real-time communication and multiplayer interaction, delivering an engaging mini metaverse experience.",
+    github: "https://github.com/PawanMugalihalli/Mini2DMetaverse/",
+    deployed: "https://mini2dmetaverse.onrender.com/",
+    category: ["Backend", "Full-Stack"],
+  },
+  {
     name: "Portfolio Website",
-    image: "/ProjectImages/Portfolio.png",
+    image: PortfolioImg,
     technologies: ["HTML", "ReactJS", "CSS", "JavaScript", "Bootstrap"],
     description: "A personal portfolio website to showcase my projects and skills.",
     github: "https://github.com/pawanmugalihalli/portfolio",
-    deployed: "https://portfolio-xi-lac-98.vercel.app/",
+    deployed: "https://my-portfolio-pi-blond-59.vercel.app/",
     category: ["Frontend"],
   },
   {
     name: "Transformer Network Implementation",
-    image: "/ProjectImages/Transformer.png", // Add image link
+    image: TransformerImg,
     technologies: ["Python", "PyTorch"],
     description: "Implemented a Transformer architecture from scratch using PyTorch, inspired by the 'Attention Is All You Need' paper.",
-    github: "https://github.com/PawanMugalihalli/TransformerFromScratch", // Add GitHub link
-    deployed: "", // Optional if not deployed
+    github: "https://github.com/PawanMugalihalli/TransformerFromScratch",
+    deployed: "",
     category: ["ML/AI"],
   },
   {
     name: "Plant Disease Prediction",
-    image: "/ProjectImages/PlantDisease.png", // Add image link
+    image: PlantDiseaseImg,
     technologies: ["Python", "TensorFlow", "Keras", "ResNet-18", "Data Augmentation"],
     description: "Developed a deep learning model for plant disease classification using a labeled dataset of tomato crop leaf images.",
-    github: "https://github.com/PawanMugalihalli/PlantDiseasePrediction1", // Add GitHub link
-    deployed: "", // Optional if not deployed
+    github: "https://github.com/PawanMugalihalli/PlantDiseasePrediction1",
+    deployed: "",
     category: ["ML/AI"],
   },
   {
     name: "College Clubs Management System",
-    image: "/ProjectImages/CollegeClubs.png", // Add image link
+    image: CollegeClubsImg,
     technologies: ["Python", "Django", "SQLite", "Bootstrap", "JavaScript", "jQuery"],
     description: "A full-stack web application for managing 4 clubs and 12+ sub-clubs with features like user authentication, announcements, and messaging.",
-    github: "https://github.com/pawanmugalihalli/college-clubs-management", // Add GitHub link
-    deployed: "https://college-clubs-management.herokuapp.com/", // Add deployed link
+    github: "https://github.com/pawanmugalihalli/college-clubs-management",
+    deployed: "https://college-clubs-management.herokuapp.com/",
     category: ["Backend", "Full-Stack"],
+  },
+  {
+    name: "Celebrity Look-Alike Finder",
+    image: CelebMatchImg, 
+    technologies: ["Python", "Flask", "OpenCV", "Face Recognition", "HTML", "CSS", "JavaScript"],
+    description: "Upload your photo to find your celebrity look-alike\n Uses facial recognition technology for accurate matching\n Displays matching results with similarity scores\n Fast and responsive web interface built with Flask.",
+    github: "https://github.com/PawanMugalihalli/CelebMatch.in", 
+    deployed: "",
+    category: ["ML/AI"],
+  },
+  {
+    name: "Diabetes Prediction System",
+    image: DiabetesPredictionImg, 
+    technologies: ["Python", "Flask", "Pandas", "Scikit-learn", "HTML", "CSS"],
+    description: "Predicts the likelihood of diabetes using user input data\nTrained using a Logistic Regression model on a real diabetes dataset\nWeb interface built with Flask for easy interaction",
+    github: "https://github.com/PawanMugalihalli/Diabetes-Prediction-ML",
+    deployed: "https://your-deployment-link.com",
+    category: ["ML/AI"],
   }
+
 ];
+
 
 export default projects;

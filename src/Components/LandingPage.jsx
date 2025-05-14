@@ -33,14 +33,11 @@ import animationData from "../assests/landing-page-pawan.json";
         👋
       </span> 
       <br/>
-      <span className={`curr-title ${isDarkMode ? "dark" : "light"}`}>4⭐ CodeChef | IIITK'26 | DSA Enthusiast </span></h1>
+      <span className={`curr-title ${isDarkMode ? "dark" : "light"}`}>Backend Developer | IIITK'26 | DSA Enthusiast </span></h1>
    
 
                    <p className= {`intro-subheading ${isDarkMode ? "dark" : "light"}`}>
-                   Currently, I am working on Spring Boot projects, combining cutting-edge technology with real-world applications. 
-                   As a 4⭐ CodeChef coder, I possess a deep understanding of Data Structures and Algorithms in C++, 
-                   which enables me to solve complex problems efficiently. 
-                   I'm actively seeking internship opportunities where I can leverage my skills to drive impactful innovation and contribute to meaningful projects.
+                   I'm a backend developer skilled in Spring Boot, building scalable and secure applications with RESTful APIs, WebSockets, and real-time systems. As a 4⭐ CodeChef coder and LeetCode Knight (1885+, Top 4.85%), I bring strong DSA and C++ competitive programming skills. I also have experience integrating ML/DL solutions into real-world apps. Actively seeking backend-focused internships that blend system design with AI innovation. 
            </p>
                 {/* Download button with conditional classes */}
                 <button
@@ -63,41 +60,4 @@ import animationData from "../assests/landing-page-pawan.json";
       };
       
       export default LandingPage;
-      
-
-    //   <div className="wrap-landing-page">
-    //   <div className={`landing-page-main ${isDarkMode ? "dark" : "light"}`}>
-    //     <div className="intro" >
-    //       {/* Heading and Subheading */}
-    //       <h1 className= {`intro-heading ${isDarkMode ? "dark" : "light"}`}>
-    //         Hi, I'm <span className="my-name">Pawan Kumar</span>  <span role="img" className="wave" aria-label="waving hand">
-    //    👋
-    //  </span> 
-    //  <br/>
-    //  <span className="curr-title">AI/ML Enthusiast | 4-Star CodeChef Coder | Problem Solver</span>
-   
-
-    //       </h1>
-    //       <p className= {`intro-subheading ${isDarkMode ? "dark" : "light"}`}>
-    //       I’m an AI/ML enthusiast focused on creating innovative solutions to real-world problems.
-    //       Currently, I'm working on machine learning projects that blend technology with practical applications. 
-    //       As a 4-star CodeChef coder, I have a strong command of Data Structures and Algorithms in C++. 
-    //       I’m seeking internships where I can apply my skills and drive impactful change.
-    //       </p>
-
-    //       {/* Download button with conditional classes */}
-    //       {/* <button
-    //         className={`download-button ${isDarkMode ? "dark" : "light"}`}
-    //         onClick={handleDownloadResume}
-    //       >
-    //         Download Resume
-    //       </button> */}
-    //     </div>
-
-    //     <div className="img-home-main">
-    //       <div className="my-pic">
-    //         <Lottie animationData={animationData} loop={true} />
-    //       </div>
-    //     </div>
-    //   </div>
-    //   </div>
+    

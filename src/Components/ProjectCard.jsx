@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import "../Css/ProjectCard.css";
-import placeholder from '../assests/placeholder.gif';
+import placeholder from "../assests/placeholder.gif";
 import { ThemeContext } from "./ThemeContext";
 
 const ProjectCard = ({ project }) => {
@@ -9,7 +9,7 @@ const ProjectCard = ({ project }) => {
   // Provide fallback values if project is null, undefined, or empty
   const defaultProject = {
     name: "Project Name Unavailable",
-    image:placeholder,
+    image: placeholder,
     technologies: ["Not Specified"],
     description: "No description provided for this project.",
     github: "#",
@@ -17,14 +17,16 @@ const ProjectCard = ({ project }) => {
   };
 
   // Use default values if `project` is falsy or empty
-  const currentProject = project && Object.keys(project).length > 0 ? project : defaultProject;
+  const currentProject =
+    project && Object.keys(project).length > 0 ? project : defaultProject;
 
   return (
     <div className={`project-card ${isDarkMode ? "dark" : "light"}`}>
       <div className="card-inner">
         {/* Front Side */}
         <div className={`card-front ${isDarkMode ? "dark" : "light"}`}>
-          <img src={currentProject.image} alt={`${currentProject.name} preview`} />
+         { /* <img src={currentProject.image} alt={`${currentProject.name} preview`} /> */}
+         <img src={currentProject.image}  alt={`${currentProject.name} preview`} />
           <h2>{currentProject.name}</h2>
         </div>
 
@@ -44,12 +46,23 @@ const ProjectCard = ({ project }) => {
           <h4>Description:</h4>
           <p>{currentProject.description}</p>
           <div className="project-links">
-            <a href={currentProject.github} target="_blank" rel="noopener noreferrer">
+            <a
+              href={currentProject.github}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               GitHub Code
             </a>
-            <a href={currentProject.deployed} target="_blank" rel="noopener noreferrer">
-              Live Project
-            </a>
+            {currentProject.deployed &&
+              currentProject.deployed.trim() !== "" && (
+                <a
+                  href={currentProject.deployed}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Live Project
+                </a>
+              )}
           </div>
         </div>
       </div>

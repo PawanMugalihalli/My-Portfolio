@@ -14,14 +14,6 @@ const Experiences = () => {
       "description": 
         "Led a team of 9 members to create a comprehensive lab manual for the 'Parallel and Distributed Computing' course, covering all labs and exercises relevant to the curriculum. Successfully delivered a well-structured manual used for future course iterations."
     },
-    {
-      "type": "left-container",
-      "img": "placeholder",
-      "title": "Content Writing Volunteer (AI and ML)",
-      "duration": "May 2024 – June 2024",
-      "description": 
-        "Volunteered with Earth5R to research and create content on sustainability in AI and machine learning. Delivered insightful articles focused on the intersection of AI advancements and environmental impact."
-    }
   ];
 
   return (

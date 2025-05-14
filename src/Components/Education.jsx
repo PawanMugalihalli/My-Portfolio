@@ -26,14 +26,6 @@ const Education = () => {
       description: "Achieved a percentage of 96.2%, excelling in mathematics and science. This period helped me decide to pursue computer science as a career path, laying the groundwork for my engineering studies.",
     },
 
-    {
-      type: "right-container",
-      img: placeholder,
-      title: "High School",
-      duration: "2019",
-      institute: "Kendriya Vidyalaya Kanpur Cantt",
-      description: "Completed my high school education with a focus on science subjects, scoring 95%. It was a foundational phase where I developed strong problem-solving skills and an interest in technology."
-    }
   ];
 
 

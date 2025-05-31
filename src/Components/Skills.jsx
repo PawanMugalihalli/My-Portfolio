@@ -106,32 +106,78 @@ import { ThemeContext } from "./ThemeContext.js";
 const Skills = () => {
   const { isDarkMode } = useContext(ThemeContext);
 
-  const rows = [
-    {
-      title: "Languages",
-      items: ["C++", "Python", "Java", "JavaScript"],
-    },
-    {
-      title: "Libraries",
-      items: ["TensorFlow", "Scikit-Learn", "Pandas", "NumPy", "Matplotlib"],
-    },
-    {
-      title: "Applications",
-      items: ["Classification", "Regression", "Image Processing"],
-    },
-    {
-      title: "DSA & Algorithms",
-      items: ["Sorting", "Graph Algorithms", "DP", "Backtracking", "Heaps", "Tries"],
-    },
-    {
-      title: "Coding Profiles",
-      items: [
-        { name: "LeetCode", url: "https://leetcode.com/u/thisispawankumar/" },
-        { name: "Codechef", url: "https://www.codechef.com/users/itspawankumar/" },
-        { name: "Codeforces", url: "https://codeforces.com/profile/thisispawankumar" },
-      ],
-    },
-  ];
+const rows = [
+  {
+    title: "Languages",
+    items: [
+      "C++",
+      "C",
+      "Python",
+      "Java",
+      "JavaScript",
+      "SQL",
+      "R-Programming",
+      "Assembly (x86)",
+    ],
+  },
+  {
+    title: "Frameworks & Libraries",
+    items: [
+      "Spring Boot",
+      "TensorFlow",
+      "Scikit-Learn",
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "OpenCV",
+      "Hibernate",
+    ],
+  },
+  {
+    title: "Operating Systems",
+    items: ["Unix/Linux", "Windows"],
+  },
+  {
+    title: "Distributed Systems & Parallel Computing",
+    items: ["OpenMP", "MPI", "Multi-threading"],
+  },
+  {
+    title: "Applications",
+    items: [
+      "RESTful APIs",
+      "Database Integration",
+      "Microservices",
+      "Classification",
+      "Regression",
+      "Computer Vision",
+      "NLP",
+    ],
+  },
+  {
+    title: "DSA & Algorithms",
+    items: [
+      "Sorting",
+      "Graph Algorithms",
+      "DP",
+      "Backtracking",
+      "Heaps",
+      "Tries",
+      "Segment Tree",
+      "Stack",
+      "Queue",
+      "Linked List",
+    ],
+  },
+  {
+    title: "Coding Profiles",
+    items: [
+      { name: "LeetCode", url: "https://leetcode.com/u/thisispawankumar/" },
+      { name: "Codechef", url: "https://www.codechef.com/users/itspawankumar/" },
+      { name: "Codeforces", url: "https://codeforces.com/profile/thisispawankumar" },
+    ],
+  },
+];
+
 
   return (
     <div className={`skills-container ${isDarkMode ? "dark" : "light"}`}>

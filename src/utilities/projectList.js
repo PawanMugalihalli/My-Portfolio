@@ -1,14 +1,24 @@
 import PortfolioImg from "../assests/ProjectImages/Portfolio.jpg";
-import CollegeClubsImg from "../assests/ProjectImages/ClubManagement.png";
 import TransformerImg from "../assests/ProjectImages/Transformer.jpg";
 import PlantDiseaseImg from "../assests/ProjectImages/PlantDisease.jpg";
 import DiabetesPredictionImg from "../assests/ProjectImages/DiabetesPrediction.jpeg";
 import CelebMatchImg from "../assests/ProjectImages/CelebMatch.jpeg";
+import RiversideCloneImg from "../assests/ProjectImages/RiversideCloneImg.jpg";
+import Mini2DMetaverseImg from "../assests/ProjectImages/MIni2DMetaverse.jpg";
 
 const projects = [
+   {
+    name: "Riverside Clone – Real-Time Video Calling Platform",
+    image: RiversideCloneImg,
+    technologies: ["Java", "Spring Boot", "WebRTC", "WebSocket", "Google Cloud", "MySQL", "Docker"],
+    description: "A browser-based video calling platform enabling real-time peer-to-peer video/audio communication using WebRTC. Features include local media recording with MediaRecorder API and Google Cloud Storage upload, STOMP over WebSockets for real-time signaling, Spring Security for authentication, and Dockerized backend deployed on Google Cloud Run.",
+    github: "https://github.com/PawanMugalihalli/riverside-clone?tab=readme-ov-file",
+    deployed: "https://riverside-clone-818192772083.us-central1.run.app/",
+    category: ["Full-Stack", "Backend", "Cloud"],
+  },
   {
     name: "Mini2DMetaverse",
-    image: CollegeClubsImg,
+    image: Mini2DMetaverseImg,
     technologies: ["JAVA", "SpringBoot", "MySQL", "Bootstrap", "JavaScript", "jQuery"],
     description: "A real-time Spring Boot-based web application that combines a chat system with an interactive 2D Tic Tac Toe game. Users can create or join public and private rooms, each featuring integrated live chat and game functionality. The project focuses on seamless real-time communication and multiplayer interaction, delivering an engaging mini metaverse experience.",
     github: "https://github.com/PawanMugalihalli/Mini2DMetaverse/",
@@ -43,15 +53,6 @@ const projects = [
     category: ["ML/AI"],
   },
   {
-    name: "College Clubs Management System",
-    image: CollegeClubsImg,
-    technologies: ["Python", "Django", "SQLite", "Bootstrap", "JavaScript", "jQuery"],
-    description: "A full-stack web application for managing 4 clubs and 12+ sub-clubs with features like user authentication, announcements, and messaging.",
-    github: "https://github.com/pawanmugalihalli/college-clubs-management",
-    deployed: "https://college-clubs-management.herokuapp.com/",
-    category: ["Backend", "Full-Stack"],
-  },
-  {
     name: "Celebrity Look-Alike Finder",
     image: CelebMatchImg, 
     technologies: ["Python", "Flask", "OpenCV", "Face Recognition", "HTML", "CSS", "JavaScript"],
@@ -68,7 +69,8 @@ const projects = [
     github: "https://github.com/PawanMugalihalli/Diabetes-Prediction-ML",
     deployed: "https://your-deployment-link.com",
     category: ["ML/AI"],
-  }
+  },
+ 
 
 ];
 

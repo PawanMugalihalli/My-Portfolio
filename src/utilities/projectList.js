@@ -30,7 +30,7 @@ const projects = [
     image: PortfolioImg,
     technologies: ["HTML", "ReactJS", "CSS", "JavaScript", "Bootstrap"],
     description: "A personal portfolio website to showcase my projects and skills.",
-    github: "https://github.com/pawanmugalihalli/portfolio",
+    github: "https://github.com/PawanMugalihalli/My-Portfolio",
     deployed: "https://my-portfolio-pi-blond-59.vercel.app/",
     category: ["Frontend"],
   },
